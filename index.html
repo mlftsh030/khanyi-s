@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Laundry Lauds</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <img src="img/LAUNDRY.png" alt="Laundry Lauds Logo" class="logo-img">
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section with Slideshow -->
+    <section id="home" class="section">
+        <div class="hero">
+            <h2>Welcome to Laundry Lauds</h2>
+            <p>We bring convenience to your laundry needs with eco-friendly practices and unmatched quality service.</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="2.jpg" alt="Laundry Services" style="width:100%">
+                <div class="text">High-Quality Laundry Services</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="1.jpg" alt="Eco-Friendly Practices" style="width:100%">
+                <div class="text">Eco-Friendly Practices</div>
+            </div>
+
+            <div class="slides fade">
+                <img src="3.jpg" alt="Professional Team" style="width:100%">
+                <div class="text">Experienced and Professional Team</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Laundry Lauds is a local and innovative company, newly established to redefine the landscape of the textile industry...</p>
+        <p><strong>Kanyisile Magudu</strong>, Founder and CEO</p>
+        <img src="img/CEO.jpg" alt="CEO Kanyisile Magudu" class="ceo-img">
+    </section>
+
+    <!-- Services Section with Modals -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="1.jpg" alt="Washing & Drying">
+                <h3>Washing & Folding</h3>
+                <p>Save time and stress with our wash and fold services...</p>
+                <button class="modal-btn" data-modal="modal1">Read More</button>
+            </div>
+            <div class="service">
+                <img src="2.jpg" alt="Steaming">
+                <h3>Steaming</h3>
+                <p>Avoid wrinkles with our professional steaming services...</p>
+                <button class="modal-btn" data-modal="modal2">Read More</button>
+            </div>
+            <div class="service">
+                <img src="3.jpg" alt="Repairing Garments">
+                <h3>Repairing Garments</h3>
+                <p>From mending tears to replacing zippers...</p>
+                <button class="modal-btn" data-modal="modal3">Read More</button>
+            </div>
+            <div class="service">
+                <img src="4.jpg" alt="Scheduled Pickup">
+                <h3>Scheduled Pickup</h3>
+                <p>Set up a delivery schedule with us...</p>
+                <button class="modal-btn" data-modal="modal4">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Washing & Folding</h3>
+            <p>Detailed information about Washing & Folding services...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Steaming</h3>
+            <p>Detailed information about Steaming services...</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Repairing Garments</h3>
+            <p>Detailed information about Repairing Garments services...</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Scheduled Pickup</h3>
+            <p>Detailed information about Scheduled Pickup services...</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:Kanyisilemag@gmail.com"> Kanyisilemag@gmail.com</a></p>
+            <p><strong><i class="fas fa-phone"></i> Phone:</strong> <a href="tel:0837935187"> 083 793 5187</a></p>
+            <p><strong><i class="fas fa-map-marker-alt"></i>Address:</strong>  Forest Mews, Eerste Rivier, Cape Town, 7100</p>
+        </div>  
+        <div class="socials">
+            <div class="social-media">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>      
+        
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <small id="nameError" class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <small id="emailError" class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <small id="messageError" class="error"></small>
+
+            <button type="submit">Send Message</button>
+            <small id="formSuccess" class="success"></small>
+        </form>
+
+    
+        
+          
+        </div>
+            <!-- Social Media Links with Icons -->
+           
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Laundry Lauds. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
