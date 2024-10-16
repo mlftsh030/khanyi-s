@@ -3,7 +3,8 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: beige;
-    background-color: navy;
+    background-color: rgb(0, 0, 0);
+;
 }
 
 .section {
